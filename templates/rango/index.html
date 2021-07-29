@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load staticfiles %}
+
 <html >
 <head>
 <title>Rango</title>
@@ -6,13 +9,20 @@
 
     <body>
         <h1>Shiyue says...</h1>
+
+
         <div>
             Xishi is a little bendan ! <br />
             <strong>{{ boldmessage }}</strong><br />
         </div>
-<div>
+
+        <div>
             <a href="/rango/about/">About</a><br />
-</div>
+            <img src="{% static 'images/myRabbit.jpg' %}"
+                 alt="Picture of myRabbit" />
+        </div>
     </body>
+
+
 </html>
 

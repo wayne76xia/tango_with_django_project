@@ -12,4 +12,5 @@ def index(request):
 #   return HttpResponse("Rango says hey there partner! <a href='/rango/about/'>About</a>")
 
 def about(request):
-  return HttpResponse("I says here is the xixi laji. <a href='/rango/'>Index</a>")
+  #return HttpResponse("I says here is the xixi laji. <a href='/rango/'>Index</a>")
+ return render(request, 'rango/about.html')
